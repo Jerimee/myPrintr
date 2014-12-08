@@ -14,8 +14,10 @@ printer.println("\n\n\nJJR\n<3\nRAK")
 printer.doubleHeightOff()
 
 # Print the 75x75 pixel logo in jjrlogo.py
-import gfx.jjrlogo as jjrlogo
-printer.printBitmap(jjrlogo.width, jjrlogo.height, jjrlogo.data)
+# import gfx.jjrlogo as jjrlogo
+# printer.printBitmap(jjrlogo.width, jjrlogo.height, jjrlogo.data)
+
+printer.printImage(Image.open('gfx/anarch.png'), True)
 
 printer.feed(5)
 

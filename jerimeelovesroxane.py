@@ -6,9 +6,11 @@ printer = Adafruit_Thermal("/dev/ttyAMA0", 19200, timeout=5)
 
 
 # Test character double-height on & off
+printer.boldOn()
 printer.justify('C')
+printer.setSize('L')   # Set type size, accepts 'S', 'M', 'L'
 printer.doubleHeightOn()
-printer.println("JJR <3 RAK")
+printer.println("\n\n\nJJR\n<3\nRAK")
 printer.doubleHeightOff()
 
 # Print the 75x75 pixel logo in jjrlogo.py

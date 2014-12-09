@@ -7,8 +7,8 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(23, GPIO.IN)
 
 while True:
-	if ( GPIO.input(23) == False ):
+	if ( GPIO.input(23) == True ):
 		print("Printing")
-		os.system("/usr/games/fortune -s science | python ggd_printer4.py")
+		#os.system("/usr/games/fortune -s science | python ggd_printer4.py")
 		print("Printed")
 	sleep(1)
